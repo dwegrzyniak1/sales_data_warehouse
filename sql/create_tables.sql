@@ -37,7 +37,7 @@ create table fact_sales (
 	,product_id int references dim_product(product_id)
 	,order_date_id int references dim_date(date_id)
 	,payment_mode_id int references dim_payment_mode(payment_mode_id)
-	,sales_amount numeric(15, 2)
+	,amount numeric(15, 2)
 	,quantity numeric(15, 2)
 	,profit numeric(15, 2)
 )
